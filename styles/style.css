@@ -1,0 +1,50 @@
+body {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+.header {
+  padding: 60px;
+  font-size: 20px;
+}
+.top-section {
+  padding: 0px 60px;
+  display: flex;
+}
+.container {
+  width: 50%;
+}
+.container img {
+  width: 80%;
+  margin: 20px;
+}
+.fas {
+  color: white;
+}
+.button {
+  text-align: center;
+  padding: 4px;
+  width: 200px;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(192, 27, 82);
+}
+.header-title {
+  text-align: center;
+  margin-top: 50px;
+}
+/* ----collections styles--- */
+.collection-banner img {
+  height: 200px;
+  width: 200px;
+}
+.fa-star.filled {
+  color: #fb8200;
+}
+.fa-star-half-alt {
+  color: #fb8200;
+}
+.collection-rating div {
+  display: flex;
+  align-items: center;
+  justify-content: ;
+}
