@@ -1,41 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-family: "Poppins", sans-serif;
   align-items: center;
 }
-.header {
-  padding: 60px;
-  font-size: 20px;
+main {
+  width: 100%;
 }
-.top-section {
+.header {
+  margin-left: 60px;
+  margin-top: 10px;
+  font-size: 15px;
+  height: 100px;
+}
+
+.container {
   padding: 0px 60px;
+  width: auto;
   display: flex;
 }
-.container {
+.half-width {
   width: 50%;
 }
-.container img {
+.container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.half-width .top-para {
+  margin-top: 0px;
+  font-size: 20px;
+}
+.half-width img {
   width: 80%;
   margin: 20px;
+  transition: transform 0.2s;
+}
+
+.half-width img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(224, 24, 57);
 }
 .fas {
   color: white;
 }
 .button {
+  transition: transform 0.1s;
   text-align: center;
   padding: 4px;
   width: 200px;
+  margin-top: 20px;
   border-radius: 15px;
   color: white;
   background-color: rgb(192, 27, 82);
 }
-.header-title {
+hr {
+  border: 3px solid #d1d1d1;
+  margin-bottom: 20px;
+}
+
+.second-container {
+  width: 80%;
+  /*height: 1662px;
+ */
+  margin: 10px auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+.section-title {
   text-align: center;
   margin-top: 50px;
+  padding-right: 100px;
+  margin-bottom: 50px;
 }
-/* ----collections styles--- */
-.collection-banner img {
-  height: 200px;
-  width: 200px;
+/* -collections styles--- */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.collection {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.collections .collection-banner img {
+  border-radius: 10px;
+  width: 100%;
 }
 .fa-star.filled {
   color: #fb8200;
@@ -46,5 +107,141 @@ body {
 .collection-rating div {
   display: flex;
   align-items: center;
-  justify-content: ;
+}
+.collection-rating h3 {
+  font-size: 13px;
+}
+.collection-price {
+  font-size: 20px;
+}
+
+.right-arrow {
+  float: right;
+  color: rgb(192, 47, 76);
+}
+.right-arrow .fas {
+  color: rgb(192, 47, 76);
+}
+/* bonuscontainer */
+.bonus-container {
+  background-color: #b3adad8f;
+  width: 100%;
+  padding: 30px;
+
+  margin-top: 30px;
+}
+
+.pubg-players {
+  margin-bottom: 30px;
+}
+.players-title {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 50px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+.last-container {
+  height: 200px;
+  background-color: rgb(5, 5, 61);
+  width: 100%;
+}
+.last-container h1 {
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+.last-container p {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+.fab {
+  border: 10px solid rgb(34, 34, 66);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .half-width .top-para {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .last-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .container .half-width {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 70px;
+  }
+
+  .second-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .last-container {
+    width: 100%;
+  }
 }
